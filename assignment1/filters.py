@@ -73,9 +73,9 @@ class Laplacian(Filter):
         super().__init__(name, desc, kernel)
 
     def _process(self, img):
-        out = self._toGray(img)
-        out = filters["gaussian3x3"].apply(out)
+        out = filters["gaussian3x3"].apply(img)
         out = super()._process(out)
+        out = img + out
         return out
 
 
@@ -193,7 +193,7 @@ filters["motionV15x15"] = (
 
 
 # Laplacian filters
-__l3 = np.array([[-1, -1, -1], [-1, 9, -1], [-1, -1, -1]], np.float32)
+__l3 = np.array([[-1, -1, -1], [-1, 8, -1], [-1, -1, -1]], np.float32)
 filters["laplacian3x3"] = (
     Laplacian("laplacian3x3", "Laplacian Sharpen 3x3", __l3))
 

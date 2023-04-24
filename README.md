@@ -8,3 +8,9 @@ The course teaches techniques for manipulating and extracting information from d
 A terminal application to apply various filters individually on a given image. 
 
 More details can be found in the assignment [README](assignment1/README.md) file.
+
+
+## Assignment 2
+Apply image segmentation techniques on a given image.
+
+More details can be found in the assignment [README](assignment2/README.md) file.

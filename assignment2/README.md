@@ -1,4 +1,4 @@
-## Assignment 1
+## Assignment 2
 A terminal application to apply image segmentation techniques on an image.
 The code was mainly tailored for the sample image provided, results may vary for other images.
 
